@@ -1,38 +1,484 @@
-.App {
+/* App.css */
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;;
+  height: 100vh;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  top: 1.5740vh;
+  left: 3.1071vw;
+  width: 6.3179vw;
+  height: auto;
+
+}
+
+.set_icon {
+  position: absolute;
+  top: 1.5740vh;
+  left: 94.3034vw;
+  width: 2.0196vw;
+  height: auto;
+
+}
+
+.muscle_group_growth {
+  position: absolute;
+  top: 11.2037vh;
+  left: 6.2661vw;
+  width: 40.3935vw;
+  height: auto; 
+
+}
+
+.muscle_group_growth_grid {
+  position: absolute;
+  top: 23.6111vh;
+  left: 9.3733vw;
+  width: 34.2309vw;
+  height: auto; 
+
+}
+
+.profile_set_bg{
+  position: absolute;
+  top: 50vh;
+  left: 6.2661vw;
+  width: 20.1967vw;
+  height: auto;  
+}
+
+.workout_data_bg{
+  position: absolute;
+  top: 50vh;
+  left: 28.0165vw;
+  width: 18.6431vw;
+  height: auto;  
+}
+
+.pick_up_for_you_bg{
+  position: absolute;
+  top: 74.6296vh;
+  left: 28.0683vw;
+  width: 18.6431vw;
+  height: auto;  
+}
+
+.main_page_bg{
+  position: absolute;
+  top: 11.2037vh;
+  left: 48.2133vw;
+  width: 46.6079vw;
+  height: auto;   
+}
+
+.body{
+  position: absolute;
+  top: 29.7222vh;
+  left: 74.1853vw;
+  width: 10.0725vw;
+  height: auto;  
+}
+
+.work_out_mode{
+  position: absolute;
+  top: 54.2592vh; 
+  left: 51.3205vw;
+  width: 12.4287vw;
+  height: auto;  
+}
+
+.calibrate_mode{
+  position: absolute;
+  top: 44vh;
+  left: 49.7vw;
+  width: 14.65vw;
+  height: auto; 
+}
+
+.Daily_mode{
+  position: absolute;
+  top: 48.5vh;
+  left: 49.7vw;
+  width: 14.65vw;
+  height: auto;  
+}
+
+.User_pic{
+  position: absolute;
+  top: 15.3629vh;
+  left: 51.3206vw;
+  width: 3.8322vw;
+  height: auto; 
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  color: #fff;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.score{
+  font-size: 1vw;
   color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 30.5555vh;
+  left: 52.8223vw;
 }
 
-.App-link {
-  color: #61dafb;
+.Muscle_Group_Growth{
+  font-size: 1vw;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 0vh;
+  left: 49.4562vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Workout_Mode{
+  font-size: 1vw;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 0vh;
+  left: 66.2351vw;
 }
+
+.Profile{
+  font-size: 1vw;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 0vh;
+  left: 78.7674vw;
+}
+
+.About_Us{
+  font-size: 1vw;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 0vh;
+  left: 87.3122vw;
+}
+
+.Score_Value{
+  font-size: 4vw;
+  color: #00FF3A;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 27.1481vh;
+  left: 52.8223vw;
+}
+
+.Hello_Name{
+  font-size: 2vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 13vh;
+  left: 55.9295vw;
+}
+
+.Name{
+  font-size: 2vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 13vh;
+  left: 64vw; 
+}
+
+.Intro1{
+  font-size: 0.8vw;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 21vh;
+  left: 56vw; 
+  word-wrap: break-word;
+}
+
+.Intro2{
+  font-size: 0.8vw;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 23vh;
+  left: 56vw; 
+  word-wrap: break-word;
+}
+
+.Dorsal{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 33.2407vh;
+  left: 85.3961vw; 
+}
+
+.Chest{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 37.6851vh;
+  left: 67.4779vw; 
+}
+
+.Core{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 43.9814vh;
+  left: 85.3961vw; 
+}
+
+.Right_arm{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 49.8148vh;
+  left: 66.0279vw; 
+}
+
+.Left_arm{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 53.4259vh;
+  left: 85.3961vw; 
+}
+
+.Right_leg{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 78.4259vh;
+  left: 69.4976vw; 
+}
+
+.Left_leg{
+  font-size: 1vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 78.4259vh;
+  left: 83.9979vw; 
+}
+
+.Chest_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 40.6851vh;
+  left: 64.4779vw; 
+}
+
+.Chest_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 42.6851vh;
+  left: 66.1vw; 
+}
+
+.Dorsal_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 36.2407vh;
+  left: 85.3961vw; 
+}
+
+.Dorsal_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 38.2407vh;
+  left: 85.3961vw; 
+}
+
+.Core_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 46.9814vh;
+  left: 85.3961vw; 
+}
+
+.Core_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 48.9814vh;
+  left: 85.3961vw; 
+}
+
+.Right_arm_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 52.8148vh;
+  left: 65.0279vw; 
+}
+
+.Right_arm_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 54.8148vh;
+  left: 65.0279vw; 
+}
+
+.Left_arm_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 56.4259vh;
+  left: 85.3961vw; 
+}
+
+.Left_arm_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 58.4259vh;
+  left: 85.3961vw; 
+}
+
+.Right_leg_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 81.4259vh;
+  left: 67.4976vw; 
+}
+
+.Right_leg_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 83.4259vh;
+  left: 66.4976vw; 
+}
+
+.Left_leg_Intensity_Level{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 81.4259vh;
+  left: 83.9979vw; 
+}
+
+.Left_leg_Resistance{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 83.4259vh;
+  left: 83.9979vw; 
+}
+
+.Age{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 55.3703vh;
+  left: 9.3733vw; 
+}
+
+.Goal{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 61.3703vh;
+  left: 9.3733vw; 
+}
+
+.Height{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 68.3703vh;
+  left: 9.3733vw; 
+}
+
+.Weight{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 74.3703vh;
+  left: 9.3733vw; 
+}
+
+.Body_Muscle_Index{
+  font-size: 0.7vw;
+  color: white;
+  font-family: Monument Extended;
+  position: absolute;
+  top: 79.3703vh;
+  left: 9.3733vw; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

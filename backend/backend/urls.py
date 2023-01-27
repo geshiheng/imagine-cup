@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from zerogym.views import get_user
+from zerogym.views import auth
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('get_user/', get_user, name='get_user')
+    path('auth/', auth, name='auth')
 ]

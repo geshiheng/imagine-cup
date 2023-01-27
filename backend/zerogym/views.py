@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 import pyodbc
 from django.views.decorators.http import require_http_methods
+from django.views.decorators.csrf import csrf_exempt
 
 
 server = 'om3gym.database.windows.net'
@@ -14,6 +15,7 @@ conn = pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABAS
 # Create your views here.
 
 @require_http_methods(["POST"])
+@csrf_exempt
 def auth(request):
     username, password = None, None
     if 'username' not in request.POST or 'password' not in request.POST:

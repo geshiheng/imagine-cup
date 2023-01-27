@@ -23,13 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ccnu9nm80&rwjyeqpb3u61c@bs#z26d8ax3n(q&50e=6#=g*s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '20.150.150.169',
     'imaginecuphost.internal.cloudapp.net'
 ]
 
+APPEND_SLASH = False
 
 # Application definition
 

@@ -1,5 +1,5 @@
 import openai
-APIKEY = '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'
+APIKEY = ''
 openai.api_key = APIKEY
 
 def chatgpt_intent_cls(text):

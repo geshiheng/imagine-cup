@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from zerogym.views import auth
+from zerogym.views import auth, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('auth/', auth, name='auth')
+    path('auth/', auth, name='auth'),
+    path('', index, name='index'),
 ]

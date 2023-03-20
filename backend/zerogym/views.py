@@ -33,3 +33,6 @@ def auth(request):
         "auth": True,
     }
     return JsonResponse(returned_obj, safe=False)
+
+def index(request):
+    return "Hello, world. You're at the polls index."

@@ -1,6 +1,6 @@
+import os
 import openai
-APIKEY = ''
-openai.api_key = APIKEY
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def chatgpt_intent_cls(text):
     answer = openai.ChatCompletion.create(

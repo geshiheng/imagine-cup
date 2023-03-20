@@ -35,4 +35,5 @@ def auth(request):
     return JsonResponse(returned_obj, safe=False)
 
 def index(request):
-    return "Hello, world. You're at the polls index."
+    print(request)
+    return JsonResponse({"response": "Hello World!"}, safe=False)

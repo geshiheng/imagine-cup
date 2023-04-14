@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from zerogym.views import auth, index, assistant
+from zerogym.views import auth, index, assistant, upload_iot_data
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', auth, name='auth'),
-    path('', index, name='index'),
-    path('assistant/', assistant, name='assistant')
+    path('index/', index, name='index'),
+    path('assistant/', assistant, name='assistant'),
+    path('iot_upload/', upload_iot_data, name='iot_upload')
 ]

@@ -1,5 +1,8 @@
 import sys
 import pyodbc
+import traceback
+
+from datetime import datetime
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
@@ -55,4 +58,27 @@ def assistant(request):
     else:
         return JsonResponse({
             'content': 'Please start your workout first'
+        })
+
+
+@require_http_methods(["POST"])
+@csrf_exempt
+def upload_iot_data(request):
+    now_time = datetime.now().strftime('_%Y-%m-%d-%H:%M:%S')
+    try:
+        print(request.FILES['file'])
+        iot_data = request.FILES['file']
+        with open('data/iot_data/iot_data%s.data' % now_time, 'wb') as destination:
+            for chunk in iot_data.chunks():
+                destination.write(chunk)
+        return JsonResponse({
+            'content': 'success',
+            'status': 200,
+        })
+    except Exception as e:
+        traceback.print_exc()
+        return JsonResponse({
+            'content': 'fail',
+            'status': 500,
+            'error': str(e)
         })

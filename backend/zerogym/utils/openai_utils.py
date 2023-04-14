@@ -1,6 +1,7 @@
 import os
 import openai
 openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.organization='org-fvZWgmKX6JzhvH2KOtXvaKKN'
 print("OPENAI_API_KEY Loaded:", openai.api_key)
 
 INTENT_TEMPLATE = """You are going to act as a personal coach that would recommend the desired workouts the user wants based on the user’s query. Your output should have two lines. The first line is the name of the workout you recommend to the user, the workout should be either ‘yoga stretch’, ‘squat’, ‘running’, or ‘None’ when the user is not talking about starting an exercise. The second line is your utterance to the user’s query. For example, when the user says ‘Hey! I would like to do some upper body exercise”, your output should be:
@@ -12,7 +13,7 @@ POST_WORKOUT_TEMPLATE = "Your customer has just finished the workout %s. Please 
 
 def chatgpt_intent_cls(text):
     answer = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=[
                     {"role": "system", "content": INTENT_TEMPLATE},
                     {"role": "user", "content": text},
